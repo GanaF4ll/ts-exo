@@ -25,10 +25,10 @@ export class Cercle {
 
 export function afficherSurface(forme: Rectangle | Cercle) {
   if (forme instanceof Rectangle) {
-    console.log(forme.calculerSurface());
+    console.log("surface rectangle:", forme.calculerSurface());
   }
   if (forme instanceof Cercle) {
-    console.log(forme.calculerSurface());
+    console.log("surface cercle:", forme.calculerSurface());
   }
 }
 

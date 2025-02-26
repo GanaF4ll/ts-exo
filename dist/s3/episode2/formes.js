@@ -23,10 +23,10 @@ class Cercle {
 exports.Cercle = Cercle;
 function afficherSurface(forme) {
     if (forme instanceof Rectangle) {
-        console.log(forme.calculerSurface());
+        console.log("surface rectangle:", forme.calculerSurface());
     }
     if (forme instanceof Cercle) {
-        console.log(forme.calculerSurface());
+        console.log("surface cercle:", forme.calculerSurface());
     }
 }
 exports.rectangle1 = new Rectangle(10, 20);
