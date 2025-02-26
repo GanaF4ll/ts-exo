@@ -1,4 +1,4 @@
-import { Personne } from "../s1/personne";
+import { Personne } from "../episode1/personne";
 
 export interface PersonneS2 extends Personne {
   readonly id: number;
