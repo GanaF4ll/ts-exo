@@ -1,11 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const animaux_1 = require("./s4/episode1/animaux");
-const animaux_2 = require("./s4/episode2/animaux");
-const formes_1 = require("./s4/episode3/formes");
-animaux_1.loup.seDeplacer();
-(0, animaux_2.faireSeDeplacer)(animaux_2.animaux);
-const rectangleS4E3 = new formes_1.Rectangle(24, 20);
-rectangleS4E3.calculerSurface();
-const cercleS4E3 = new formes_1.Cercle(24);
-cercleS4E3.calculerSurface();
+const tuples_1 = require("./s5/episode1/tuples");
+const piccolo = (0, tuples_1.creerScore)("Piccolo", 10);
+const buu = (0, tuples_1.creerScore)("Buu", 5);
+(0, tuples_1.afficherScore)(piccolo);
+(0, tuples_1.afficherScore)(buu);
