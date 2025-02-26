@@ -1,5 +1,6 @@
 import { afficherScore, creerScore } from "./s5/episode1/tuples";
 import { Direction, vecteurDirection } from "./s5/episode2/enums";
+import { deplacer } from "./s5/episode3/enums";
 
 // S4 episode 1
 const piccolo = creerScore("Piccolo", 10);
@@ -15,3 +16,4 @@ vecteurDirection(Direction.Est);
 vecteurDirection(Direction.Ouest);
 
 // S4 episode 3
+deplacer([5, 5], Direction.Nord);
