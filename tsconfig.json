@@ -6,5 +6,8 @@
     "rootDir": "./src",
     "strict": true
   },
+  "paths": {
+    "mon-module": ["./src/s6/mon-module"]
+  },
   "include": ["src"]
 }

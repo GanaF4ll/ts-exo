@@ -14,5 +14,8 @@
   "packageManager": "pnpm@10.4.1",
   "devDependencies": {
     "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "mon-module": "file:src/s6/mon-module"
   }
 }

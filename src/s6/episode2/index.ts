@@ -1,10 +1,5 @@
 import { alerter, logger } from "mon-module";
-import {
-  Cours,
-  Etudiant,
-  GestionCours,
-  NiveauCours,
-} from "./s6/episode2/gestionCours";
+import { Cours, Etudiant, GestionCours, NiveauCours } from "./gestionCours";
 
 const students: Etudiant[] = [
   { id: 1, nom: "Alice", niveau: "Licence" },
@@ -17,12 +12,10 @@ const courses: Cours[] = [
   { code: "PHY101", titre: "Physique", niveau: NiveauCours.Avance },
 ];
 
-export const gestionCours = new GestionCours(students, courses);
+const gestionCours = new GestionCours(students, courses);
 gestionCours.inscrireEtudiant("MATH101", students[0]);
 gestionCours.inscrireEtudiant("INFO101", students[1]);
 gestionCours.inscrireEtudiant("PHY101", students[2]);
 
-gestionCours.inscriptions.forEach((i) => {
-  logger(`${i.etudiantId} ${i.coursCode}`);
-  alerter(`${i.etudiantId} ${i.coursCode}`);
-});
+logger(`${gestionCours.afficherInscriptions()}`);
+alerter(`${gestionCours.afficherInscriptions()}`);
